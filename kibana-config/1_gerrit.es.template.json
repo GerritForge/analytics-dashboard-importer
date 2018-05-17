@@ -1,0 +1,79 @@
+{
+	"template": "gerrit",
+	"settings": {
+		"number_of_shards": 1
+	},
+	"mappings": {
+		"analytics": {
+			"_source": {
+				"enabled": true
+			},
+			"properties": {
+				"added_lines": {
+					"type": "long"
+				},
+				"author": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"type": "keyword",
+							"ignore_above": 256
+						}
+					}
+				},
+				"day": {
+					"type": "long"
+				},
+				"deleted_lines": {
+					"type": "long"
+				},
+				"email": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"type": "keyword",
+							"ignore_above": 256
+						}
+					}
+				},
+				"hour": {
+					"type": "long"
+				},
+				"last_commit_date": {
+					"type": "date",
+					"format": "epoch_millis"
+				},
+				"month": {
+					"type": "long"
+				},
+				"num_commits": {
+					"type": "long"
+				},
+				"num_files": {
+					"type": "long"
+				},
+				"organization": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"type": "keyword",
+							"ignore_above": 256
+						}
+					}
+				},
+				"project": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"type": "keyword",
+							"ignore_above": 256
+						}
+					}
+				},
+				"year": {
+					"type": "long"
+				}
+			}
+		}
+	}
+}
