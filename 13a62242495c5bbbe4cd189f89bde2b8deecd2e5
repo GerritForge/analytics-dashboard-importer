@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e1aaa52_afcf6c30",
+        "filename": "kibana-config/2_gerrit-generic-top-changes.es.template.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2018-06-05T10:00:02Z",
+      "side": 1,
+      "message": "Template JSON syntax seems wrong.\nI would expect something like:\n\n  {\n        \"template\": \"gerrit\",\n        \"settings\": {\n                \"number_of_shards\": 1\n        },\n        \"mappings\": {\n                \"analytics\": {\n\nP.S. Are you defining a new template for a new type? or a new index?",
+      "revId": "13a62242495c5bbbe4cd189f89bde2b8deecd2e5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
