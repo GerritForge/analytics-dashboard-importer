@@ -16,6 +16,24 @@
       "revId": "13a62242495c5bbbe4cd189f89bde2b8deecd2e5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "217eabe6_d4726dbe",
+        "filename": "kibana-config/2_gerrit-generic-top-changes.es.template.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013956
+      },
+      "writtenOn": "2018-06-11T10:51:31Z",
+      "side": 1,
+      "message": "this is a new index. This is an export from ES",
+      "parentUuid": "1e1aaa52_afcf6c30",
+      "revId": "13a62242495c5bbbe4cd189f89bde2b8deecd2e5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
