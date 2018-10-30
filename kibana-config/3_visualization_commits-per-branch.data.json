@@ -1,0 +1,16 @@
+{
+  "_index": ".kibana",
+  "_type": "visualization",
+  "_id": "47fccee0-dc68-11e8-8ed7-2366d764e852",
+  "_score": 1,
+  "_source": {
+    "title": "Commits per branch",
+    "visState": "{\"title\":\"Commits per branch\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"branches.keyword\",\"size\":5,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"num_commits\"}},\"order\":\"desc\",\"orderBy\":\"custom\"}}],\"listeners\":{}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+    }
+  }
+}
