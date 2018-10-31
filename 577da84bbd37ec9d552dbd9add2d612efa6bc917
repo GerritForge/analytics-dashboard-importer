@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a911b0ee_b7350b65",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2018-10-31T17:03:18Z",
+      "side": 1,
+      "message": "dashboards suggest more than one can be imported?\nShould this be \u0027$DASHBOARD\u0027 only?",
+      "range": {
+        "startLine": 10,
+        "startChar": 59,
+        "endLine": 10,
+        "endChar": 69
+      },
+      "revId": "577da84bbd37ec9d552dbd9add2d612efa6bc917",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c78c18c9_7e893b1f",
+        "filename": "docker-entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2018-10-31T17:03:18Z",
+      "side": 1,
+      "message": "Shall we validate the input? Only base and advanced are valid dashboard values now",
+      "revId": "577da84bbd37ec9d552dbd9add2d612efa6bc917",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
