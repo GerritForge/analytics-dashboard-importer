@@ -1,4 +1,10 @@
 #!/bin/sh
+
+if [ -z "$DASHBOARDS" ];
+then
+  DASHBOARDS="base"
+fi
+
 /wait-for-elasticsearch
 
 echo "** Importing Elasticsearch templates from: "
@@ -19,5 +25,17 @@ for file in `ls -v /*.kibana.data.json`;
         --input=$file \
         --type=data \
         --headers '{"Content-Type": "application/json"}';
+done;
+
+for dashboard in ${DASHBOARDS}; do
+  echo "** Importing Kibana visualizations and '$dashboard' dashboard from: ";
+  for file in `ls -v /dashboards/$dashboard/*.kibana.data.json`; do
+      echo "--> $file";
+          /usr/lib/node_modules/elasticdump/bin/elasticdump \
+          --output=http://elasticsearch:9200/.kibana \
+          --input=$file \
+          --type=data \
+          --headers '{"Content-Type": "application/json"}';
+  done;
 done;
 
