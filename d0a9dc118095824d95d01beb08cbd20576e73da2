@@ -22,6 +22,30 @@
       "revId": "d0a9dc118095824d95d01beb08cbd20576e73da2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64b5a12c_f79d7883",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2018-10-31T18:03:26Z",
+      "side": 1,
+      "message": "good point ...I\u0027m gonna amend it.",
+      "parentUuid": "8cfad78c_a198b5fa",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 9
+      },
+      "revId": "d0a9dc118095824d95d01beb08cbd20576e73da2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

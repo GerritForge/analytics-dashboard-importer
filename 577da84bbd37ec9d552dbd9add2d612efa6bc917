@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "14385ec6_ba4cd36d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2018-10-31T18:03:26Z",
+      "side": 1,
+      "message": "I was thinking that maybe in future we might have to import more than one dashboard (with the audit logs for example). Since it wasn\u0027t do difficult I have treated it as an array.",
+      "parentUuid": "a911b0ee_b7350b65",
+      "range": {
+        "startLine": 10,
+        "startChar": 59,
+        "endLine": 10,
+        "endChar": 69
+      },
+      "revId": "577da84bbd37ec9d552dbd9add2d612efa6bc917",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c78c18c9_7e893b1f",
         "filename": "docker-entrypoint.sh",
         "patchSetId": 1
@@ -39,6 +63,24 @@
       "revId": "577da84bbd37ec9d552dbd9add2d612efa6bc917",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b24e7e3e_146e2bd4",
+        "filename": "docker-entrypoint.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2018-10-31T18:03:26Z",
+      "side": 1,
+      "message": "I was thinking not to validate so if we need to add a new one it is just question of adding the configs without touching the code.",
+      "parentUuid": "c78c18c9_7e893b1f",
+      "revId": "577da84bbd37ec9d552dbd9add2d612efa6bc917",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
