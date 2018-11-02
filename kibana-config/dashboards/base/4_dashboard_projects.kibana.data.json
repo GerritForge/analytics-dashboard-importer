@@ -13,7 +13,7 @@
     "version": 1,
     "timeRestore": false,
     "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"gerrit\",\"key\":\"is_merge\",\"negate\":false,\"params\":[\"false\"],\"type\":\"phrases\",\"value\":\"false\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"is_merge\":\"false\"}}]}}},{\"meta\":{\"index\":\"gerrit\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"branches.keyword\",\"value\":\"master\"},\"query\":{\"match\":{\"branches.keyword\":{\"query\":\"master\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"gerrit\",\"key\":\"is_merge\",\"negate\":false,\"params\":[\"false\"],\"type\":\"phrases\",\"value\":\"false\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"is_merge\":\"false\"}}]}}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
     }
   }
 }
