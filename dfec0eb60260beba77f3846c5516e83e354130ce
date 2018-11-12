@@ -69,6 +69,30 @@
       "revId": "dfec0eb60260beba77f3846c5516e83e354130ce",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8a533f5_0d83dbd5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2018-11-12T19:57:36Z",
+      "side": 1,
+      "message": "Ops...I haven\u0027t seen it either :/ Done",
+      "parentUuid": "2b65c983_9b7342a9",
+      "range": {
+        "startLine": 9,
+        "startChar": 34,
+        "endLine": 9,
+        "endChar": 42
+      },
+      "revId": "dfec0eb60260beba77f3846c5516e83e354130ce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
