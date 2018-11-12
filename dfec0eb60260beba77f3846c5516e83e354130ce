@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57f5536f_9a5c557f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1015244
+      },
+      "writtenOn": "2018-11-12T19:26:55Z",
+      "side": 1,
+      "message": "Use present instead of past tense: https://gerrit-review.googlesource.com/Documentation/dev-contributing.html#commit-message\n\nAlso, do we have a bug fix for this to add to the comment?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 7
+      },
+      "revId": "dfec0eb60260beba77f3846c5516e83e354130ce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
