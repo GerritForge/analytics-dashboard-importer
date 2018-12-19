@@ -8,12 +8,12 @@ If you need to regenerate kibana's configurations (i.e.: index pattern, visualiz
 ## Update index pattern
 
 If you need to regenerate kibana's index pattern (tipically if you are now extracting an additional field into elasticsearch),
-you'll need to dump your kibana's index pattern as follows:
+you'll need to dump your kibana's index pattern as follows (this example is for gitcommits):
 
 ```bash
-elasticdump --input='http://<elasitc_search_host>:9200/.kibana' --output=$ --type=data --searchBody '{"query":{"term":{"_id": "gerrit"}}}' | jq .
+elasticdump --input='http://<elasitc_search_host>:9200/.kibana' --output=$ --type=data --searchBody '{"query":{"term":{"_id": "gitcommits"}}}' | jq .
 ```
-- Save the output into **kibana-config/2_index-pattern.kibana.data.json** file
+- Save the output into **kibana-config/settings/base/2_index-pattern.gitcommits.data.json** file
 
 ## Update dashboard
 

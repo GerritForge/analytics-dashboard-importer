@@ -1,0 +1,16 @@
+{
+  "_index": ".kibana",
+  "_type": "visualization",
+  "_id": "773e4e70-02bc-11e9-a275-df6e2e86493b",
+  "_score": 1,
+  "_source": {
+    "title": "GIT/SSH vs GIT/HTTP",
+    "visState": "{\"title\":\"GIT/SSH vs GIT/HTTP\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"access_path:GIT\"}}},\"label\":\"GIT\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"audit_type.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"type\"}}],\"listeners\":{}}",
+    "uiStateJSON": "{\"vis\":{\"colors\":{\"SSH\":\"#82B5D8\",\"HTTP\":\"#F4D598\"}}}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"auditlog\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+    }
+  }
+}

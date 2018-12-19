@@ -1,0 +1,66 @@
+{
+  "template": "auditlog",
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "auditlog": {
+      "_source": {
+        "enabled": true
+      },
+      "properties": {
+        "access_path": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "audit_type": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "command": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "command_arguments": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "events_time_bucket": {
+          "type": "date"
+        },
+        "num_events": {
+          "type": "long"
+        },
+        "user_identifier": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}

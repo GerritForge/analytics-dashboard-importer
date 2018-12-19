@@ -7,6 +7,6 @@
     "buildNum": 15443,
     "xPackMonitoring:allowReport": true,
     "xPackMonitoring:showBanner": true,
-    "defaultIndex": "gerrit"
+    "defaultIndex": "gitcommits"
   }
 }

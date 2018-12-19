@@ -1,5 +1,5 @@
 {
-	"template": "gerrit",
+	"template": "gitcommits",
 	"settings": {
 		"number_of_shards": 1
 	},

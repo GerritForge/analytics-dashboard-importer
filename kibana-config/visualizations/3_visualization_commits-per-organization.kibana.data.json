@@ -8,7 +8,7 @@
         "description": "",
         "version": 1,
         "kibanaSavedObjectMeta": {
-            "searchSourceJSON": "{\"index\":\"gerrit\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+            "searchSourceJSON": "{\"index\":\"gitcommits\",\"query\":{\"match_all\":{}},\"filter\":[]}"
         }
     }
 }

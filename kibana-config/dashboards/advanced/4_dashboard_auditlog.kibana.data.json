@@ -1,0 +1,19 @@
+{
+  "_index": ".kibana",
+  "_type": "dashboard",
+  "_id": "7d9a38e0-02eb-11e9-bb50-f3440d75b669",
+  "_score": 1,
+  "_source": {
+    "title": "Auditlog dashboard",
+    "hits": 0,
+    "description": "",
+    "panelsJSON": "[{\"col\":7,\"id\":\"20103cb0-02d7-11e9-a388-7f80e86567fa\",\"panelIndex\":1,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"773e4e70-02bc-11e9-a275-df6e2e86493b\",\"panelIndex\":2,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"64a55aa0-02c2-11e9-a275-df6e2e86493b\",\"panelIndex\":4,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"5830cbb0-02e5-11e9-bb50-f3440d75b669\",\"panelIndex\":5,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f6c3c4c0-02d7-11e9-a388-7f80e86567fa\",\"panelIndex\":6,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a179f6a0-02e2-11e9-a388-7f80e86567fa\",\"panelIndex\":7,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e87b9e30-02c1-11e9-a275-df6e2e86493b\",\"panelIndex\":8,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"}]",
+    "optionsJSON": "{\"darkTheme\":false}",
+    "uiStateJSON": "{}",
+    "version": 1,
+    "timeRestore": false,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+    }
+  }
+}
