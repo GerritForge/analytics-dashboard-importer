@@ -81,6 +81,15 @@
 							"ignore_above": 256
 						}
 					}
+				},
+				"hashtags": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"type": "keyword",
+							"ignore_above": 256
+						}
+					}
 				}
 			}
 		}
