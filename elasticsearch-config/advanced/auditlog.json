@@ -68,6 +68,15 @@
               "ignore_above": 256
             }
           }
+        },
+        "user_type": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         }
       }
     }
