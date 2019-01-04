@@ -59,6 +59,15 @@
               "ignore_above": 256
             }
           }
+        },
+        "result": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         }
       }
     }
