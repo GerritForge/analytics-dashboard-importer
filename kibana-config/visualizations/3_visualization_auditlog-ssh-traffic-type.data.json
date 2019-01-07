@@ -1,0 +1,14 @@
+{
+  "_id": "61ef1120-046b-11e9-9fe0-e1be34d7f8ca",
+  "_type": "visualization",
+  "_source": {
+    "title": "SSH traffic type",
+    "visState": "{\"title\":\"SSH traffic type\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\",\"customLabel\":\"SSH Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"command.keyword\",\"exclude\":\"LOGIN|LOGOUT\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"command_arguments.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"auditlog\",\"query\":{\"match_all\":{}},\"filter\":[{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"auditlog\",\"type\":\"query_string\",\"key\":\"query\",\"value\":\"audit_type.keyword:SSH\",\"disabled\":false,\"negate\":false,\"alias\":null,\"apply\":true},\"$state\":{\"store\":\"appState\"}}]}"
+    }
+  }
+}

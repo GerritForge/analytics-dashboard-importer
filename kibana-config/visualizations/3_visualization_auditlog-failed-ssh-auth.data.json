@@ -1,11 +1,10 @@
 {
   "_index": ".kibana",
+  "_id": "c11484c0-0446-11e9-9ce6-01ffd9147df0",
   "_type": "visualization",
-  "_id": "5830cbb0-02e5-11e9-bb50-f3440d75b669",
-  "_score": 1,
   "_source": {
-    "title": "Failed SSH events over time",
-    "visState": "{\"title\":\"Failed SSH events over time\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(timefield=\\\"events_time_bucket\\\",metric=sum:num_events).label(\\\"All Events\\\") .es(timefield=\\\"events_time_bucket\\\", metric=sum:num_events, q=\\\"command.keyword:FAILED_SSH_AUTH\\\").color(#FF0000).label(\\\"Failed SSH events\\\")\",\"interval\":\"1d\"},\"aggs\":[],\"listeners\":{}}",
+    "title": "SSH failed events (timelion)",
+    "visState": "{\"title\":\"SSH failed events (timelion)\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(timefield=\\\"events_time_bucket\\\", metric=sum:num_events, q=\\\"command.keyword:FAILED_SSH_AUTH\\\").color(#FF0000).label(\\\"Failed SSH events\\\")\",\"interval\":\"1h\"},\"aggs\":[],\"listeners\":{}}",
     "uiStateJSON": "{}",
     "description": "",
     "version": 1,
