@@ -22,6 +22,30 @@
       "revId": "f278cffd0ac036ccb2e453825fbc0c3b288d49d5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e0807c55_076d73a3",
+        "filename": "kibana-config/visualizations/3_visualization_auditlog-git-http-vs-gerrit-http.data.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2019-01-08T10:49:59Z",
+      "side": 0,
+      "message": "Apparently, the \"_index\" field is not needed. If you export dashboards and visualizations from the Kibana index management UI, \"_index\" won\u0027t be included. I suspect we initially had it because we used elastidump to export all the Kibana config.\n\nI have tested it and works fine both with and without \"_index\".",
+      "parentUuid": "3c847018_360ce36c",
+      "range": {
+        "startLine": 2,
+        "startChar": 2,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "f278cffd0ac036ccb2e453825fbc0c3b288d49d5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
