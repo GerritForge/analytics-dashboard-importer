@@ -3,7 +3,7 @@
   "_type": "visualization",
   "_source": {
     "title": "GIT/SSH vs GERRIT/SSH",
-    "visState": "{\"title\":\"GIT/SSH vs GERRIT/SSH\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"SSH access\"},{\"input\":{}}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"access_path.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+    "visState": "{\"title\":\"GIT/SSH vs GERRIT/SSH\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"SSH access\"},{\"input\":{}}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"access_path.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"SSH access type\"}}],\"listeners\":{}}",
     "uiStateJSON": "{\"vis\":{\"legendOpen\":true,\"colors\":{\"SSH_COMMAND\":\"#F9BA8F\",\"GIT\":\"#9AC48A\"}}}",
     "description": "",
     "version": 1,
