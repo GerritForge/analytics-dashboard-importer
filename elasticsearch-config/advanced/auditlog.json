@@ -77,6 +77,15 @@
               "ignore_above": 256
             }
           }
+        },
+        "project": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         }
       }
     }
