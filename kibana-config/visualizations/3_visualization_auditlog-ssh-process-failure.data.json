@@ -3,7 +3,7 @@
   "_type": "visualization",
   "_source": {
     "title": "SSH process failures",
-    "visState": "{\"title\":\"SSH process failures\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"result.keyword\",\"exclude\":\"0|FAIL\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+    "visState": "{\"title\":\"SSH process failures\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"SSH Traffic\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"result.keyword\",\"exclude\":\"0|FAIL\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Result\"}}],\"listeners\":{}}",
     "uiStateJSON": "{}",
     "description": "",
     "version": 1,
