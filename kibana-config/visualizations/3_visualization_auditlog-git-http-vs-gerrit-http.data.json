@@ -3,7 +3,7 @@
   "_type": "visualization",
   "_source": {
     "title": "GIT/HTTP vs GERRIT/HTTP",
-    "visState": "{\"title\":\"GIT/HTTP vs GERRIT/HTTP\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:HTTP OR audit_type.keyword:EXTENDED_HTTP\"}}},\"label\":\"HTTP access\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"access_path.keyword\",\"exclude\":\"UNKNOWN\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+    "visState": "{\"title\":\"GIT/HTTP vs GERRIT/HTTP\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:HTTP OR audit_type.keyword:EXTENDED_HTTP\"}}},\"label\":\"HTTP access\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"access_path.keyword\",\"exclude\":\"UNKNOWN\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"access path\"}}],\"listeners\":{}}",
     "uiStateJSON": "{}",
     "description": "",
     "version": 1,
