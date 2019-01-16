@@ -1,0 +1,16 @@
+{
+  "_index": ".kibana",
+  "_type": "visualization",
+  "_id": "068c90a0-19d3-11e9-9aa0-17dd341d77ea",
+  "_score": 1,
+  "_source": {
+    "title": "REST API READS TRAFFIC TYPE - command and subcommand",
+    "visState": "{\"title\":\"REST API READS TRAFFIC TYPE - command and subcommand\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"legendPosition\":\"right\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:EXTENDED_HTTP AND command.keyword:GET\"}}},\"label\":\"ALL HITS\"}],\"row\":false}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"command.keyword\",\"exclude\":\"-k\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"HTTP verb\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"sub_command.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"sub command\"}}],\"listeners\":{}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"auditlog\",\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"apply\":true,\"disabled\":false,\"index\":\"auditlog\",\"key\":\"query\",\"negate\":false,\"type\":\"query_string\",\"value\":\"audit_type.keyword:EXTENDED_HTTP\"},\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"audit_type.keyword:EXTENDED_HTTP\"}}}]}"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_index": ".kibana",
+  "_type": "visualization",
+  "_id": "7f7cdee0-19d1-11e9-9aa0-17dd341d77ea",
+  "_score": 1,
+  "_source": {
+    "title": "SSH traffic type - command and subcommand",
+    "visState": "{\"title\":\"SSH traffic type - command and subcommand\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\",\"customLabel\":\"SSH Traffic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\"}}},\"label\":\"SSH Traffic\"}],\"row\":true}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"command.keyword\",\"exclude\":\"LOGIN|LOGOUT\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"SSH Command\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"sub_command.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"sub command\"}}],\"listeners\":{}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"index\":\"auditlog\",\"query\":{\"match_all\":{}},\"filter\":[{\"query\":{\"query_string\":{\"query\":\"audit_type.keyword:SSH\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"auditlog\",\"type\":\"query_string\",\"key\":\"query\",\"value\":\"audit_type.keyword:SSH\",\"disabled\":false,\"negate\":false,\"alias\":null,\"apply\":true},\"$state\":{\"store\":\"appState\"}}]}"
+    }
+  }
+}
