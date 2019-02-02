@@ -1,0 +1,16 @@
+{
+  "_index": ".kibana",
+  "_type": "doc",
+  "_id": "space:default",
+  "_score": 1,
+  "_source": {
+    "space": {
+      "name": "Default",
+      "description": "This is your default space!",
+      "color": "#00bfb3",
+      "_reserved": true
+    },
+    "type": "space",
+    "updated_at": "2019-01-29T10:21:51.206Z"
+  }
+}

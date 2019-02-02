@@ -1,13 +1,14 @@
 {
   "_index": ".kibana",
-  "_type": "config",
-  "_id": "5.5.2",
+  "_type": "doc",
+  "_id": "config:6.5.4",
   "_score": 1,
   "_source": {
-    "buildNum": 15443,
-    "xPackMonitoring:allowReport": true,
-    "xPackMonitoring:showBanner": true,
-    "defaultIndex": "gitcommits",
-    "timelion:max_buckets": "200000"
+    "config": {
+      "buildNum": 18878,
+      "defaultIndex": "7d9fb770-23b6-11e9-ae14-1dc4e23b60c3"
+    },
+    "type": "config",
+    "updated_at": "2019-01-30T12:06:22.370Z"
   }
 }

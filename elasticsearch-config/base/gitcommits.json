@@ -1,7 +1,11 @@
 {
-	"template": "gitcommits",
+	"index_patterns": [
+		"gitcommits"
+	],
 	"settings": {
-		"number_of_shards": 1
+		"index": {
+			"number_of_shards": "1"
+		}
 	},
 	"mappings": {
 		"gitCommits": {
@@ -84,5 +88,6 @@
 				}
 			}
 		}
-	}
+	},
+	"aliases": {}
 }
