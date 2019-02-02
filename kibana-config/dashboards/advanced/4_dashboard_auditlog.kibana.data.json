@@ -1,17 +1,28 @@
 {
-  "_id": "7d9a38e0-02eb-11e9-bb50-f3440d75b669",
-  "_type": "dashboard",
+  "_index": ".kibana",
+  "_type": "doc",
+  "_id": "dashboard:af388be0-2889-11e9-b833-4da17a58a3cd",
+  "_score": 1,
   "_source": {
-    "title": "Auditlog dashboard",
-    "hits": 0,
-    "description": "",
-    "panelsJSON": "[{\"col\":1,\"id\":\"15a71a60-0448-11e9-b6bf-b715fd32063d\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":6,\"type\":\"visualization\"},{\"col\":9,\"id\":\"64a55aa0-02c2-11e9-a275-df6e2e86493b\",\"panelIndex\":3,\"row\":13,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e87b9e30-02c1-11e9-a275-df6e2e86493b\",\"panelIndex\":4,\"row\":13,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"773e4e70-02bc-11e9-a275-df6e2e86493b\",\"panelIndex\":5,\"row\":13,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f7435a40-0472-11e9-a739-db021c257d4b\",\"panelIndex\":6,\"row\":16,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"d9c0eeb0-0477-11e9-a739-db021c257d4b\",\"panelIndex\":7,\"row\":22,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"c11484c0-0446-11e9-9ce6-01ffd9147df0\",\"panelIndex\":8,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"61ef1120-046b-11e9-9fe0-e1be34d7f8ca\",\"panelIndex\":9,\"row\":19,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"20103cb0-02d7-11e9-a388-7f80e86567fa\",\"panelIndex\":11,\"row\":16,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"3addd710-103c-11e9-935a-cd1e1729aa63\",\"panelIndex\":12,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"bccf7c20-103b-11e9-880d-332437dbe805\",\"panelIndex\":13,\"row\":16,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"e1b03580-103a-11e9-880d-332437dbe805\",\"panelIndex\":14,\"row\":19,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"040bc340-103d-11e9-935a-cd1e1729aa63\",\"panelIndex\":15,\"row\":19,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"d61ec1e0-1824-11e9-86e3-17b4b782a00f\",\"panelIndex\":16,\"row\":7,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"},{\"col\":5,\"id\":\"d7b2c800-1827-11e9-86e3-17b4b782a00f\",\"panelIndex\":17,\"row\":22,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":8,\"size_y\":6,\"panelIndex\":18,\"type\":\"visualization\",\"id\":\"da684140-18ba-11e9-9d10-f94a8fdb5b40\",\"col\":1,\"row\":7}]",
-    "optionsJSON": "{\"darkTheme\":false}",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "timeRestore": false,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
-    }
+    "dashboard": {
+      "title": "Auditlog dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":40,\"w\":24,\"h\":15,\"i\":\"1\"},\"id\":\"605a50c0-27e0-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":23,\"w\":48,\"h\":17,\"i\":\"2\"},\"id\":\"f5c2b7c0-27df-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":40,\"w\":24,\"h\":15,\"i\":\"3\"},\"id\":\"894be200-27e0-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":0,\"y\":0,\"w\":31,\"h\":23,\"i\":\"4\"},\"id\":\"d8a02e30-27de-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":31,\"y\":0,\"w\":17,\"h\":23,\"i\":\"5\"},\"id\":\"5a5d1230-27df-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":32,\"y\":55,\"w\":16,\"h\":15,\"i\":\"6\"},\"id\":\"0c84c230-27e2-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":16,\"y\":55,\"w\":16,\"h\":15,\"i\":\"7\"},\"id\":\"a84a3070-27e1-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":70,\"w\":16,\"h\":15,\"i\":\"8\"},\"id\":\"d490c3a0-27e2-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":16,\"y\":70,\"w\":16,\"h\":15,\"i\":\"9\"},\"id\":\"54130470-27e4-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":32,\"y\":70,\"w\":16,\"h\":15,\"i\":\"10\"},\"id\":\"c860e1d0-27e4-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":32,\"y\":85,\"w\":16,\"h\":15,\"i\":\"11\"},\"id\":\"755a3170-27e5-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":55,\"w\":16,\"h\":15,\"i\":\"12\"},\"id\":\"619684d0-27e1-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":85,\"w\":16,\"h\":15,\"i\":\"13\"},\"id\":\"44fd0020-288a-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":100,\"w\":16,\"h\":15,\"i\":\"14\"},\"id\":\"8fef7c00-288c-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":32,\"y\":100,\"w\":16,\"h\":15,\"i\":\"15\"},\"id\":\"68ec2630-288c-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":true}},\"gridData\":{\"x\":16,\"y\":100,\"w\":16,\"h\":15,\"i\":\"16\"},\"id\":\"eb34ebf0-288b-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":16,\"y\":85,\"w\":16,\"h\":15,\"i\":\"18\"},\"id\":\"411f3440-288b-11e9-b833-4da17a58a3cd\",\"panelIndex\":\"18\",\"type\":\"visualization\",\"version\":\"6.5.4\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-1y",
+      "refreshInterval": {
+        "pause": true,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "type": "dashboard",
+    "updated_at": "2019-02-04T16:09:29.424Z"
   }
 }

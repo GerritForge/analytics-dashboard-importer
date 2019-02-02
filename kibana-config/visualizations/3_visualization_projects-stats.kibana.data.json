@@ -1,14 +1,20 @@
 {
-	"_id": "67c28b30-d9cf-11e7-bc47-b39f13297094",
-	"_type": "visualization",
+	"_index": ".kibana",
+	"_type": "doc",
+	"_id": "visualization:7d9b8c60-23f0-11e9-ae14-1dc4e23b60c3",
+	"_score": 1,
 	"_source": {
-		"title": "Projects' stats",
-			"visState": "{\"title\":\"Projects' stats\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author.keyword\",\"customLabel\":\"#Authors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"organization.keyword\",\"customLabel\":\"#Organizations\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"added_lines\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"deleted_lines\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"num_files\",\"customLabel\":\"AVG num files\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"changes_per_commit\",\"customLabel\":\"AVG changes per commit\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project.keyword\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"3\"}}],\"listeners\":{}}",
+		"visualization": {
+			"title": "GIT Commits - Project Stats",
+			"visState": "{\"title\":\"GIT Commits - Project Stats\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"author.keyword\",\"customLabel\":\"#Authors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"organization.keyword\",\"customLabel\":\"#Organizations\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"added_lines\",\"customLabel\":\"#Added Lines\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"deleted_lines\",\"customLabel\":\"#Deleted Lines\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"num_files\",\"customLabel\":\"AVG #Files\"}},{\"id\":\"7\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"changes_per_commit\",\"customLabel\":\"AVG #Changes per commit\"}},{\"id\":\"8\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"project.keyword\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Project\"}}]}",
 			"uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
 			"description": "",
 			"version": 1,
 			"kibanaSavedObjectMeta": {
-				"searchSourceJSON": "{\"index\":\"gitcommits\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+				"searchSourceJSON": "{\"index\":\"7d9fb770-23b6-11e9-ae14-1dc4e23b60c3\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
 			}
+		},
+		"type": "visualization",
+		"updated_at": "2019-01-29T18:31:26.647Z"
 	}
 }

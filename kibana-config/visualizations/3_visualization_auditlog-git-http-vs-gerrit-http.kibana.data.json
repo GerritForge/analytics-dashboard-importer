@@ -1,0 +1,20 @@
+{
+  "_index": ".kibana",
+  "_type": "doc",
+  "_id": "visualization:0c84c230-27e2-11e9-b833-4da17a58a3cd",
+  "_score": 1,
+  "_source": {
+    "visualization": {
+      "title": "Auditlog - GIT/HTTP vs GERRIT/HTTP",
+      "visState": "{\"title\":\"Auditlog - GIT/HTTP vs GERRIT/HTTP\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_events\",\"customLabel\":\"#Events\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"filters\",\"schema\":\"split\",\"params\":{\"filters\":[{\"input\":{\"query\":\"audit_type.keyword:HTTP OR audit_type.keyword:EXTENDED_HTTP\"},\"label\":\"Events over HTTP\"}],\"row\":false}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"access_path.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"exclude\":\"UNKNOWN\",\"customLabel\":\"Access Type\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"370472d8-26a4-4d58-a91b-6a8597eac6b8\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "type": "visualization",
+    "updated_at": "2019-02-04T14:57:58.712Z"
+  }
+}
