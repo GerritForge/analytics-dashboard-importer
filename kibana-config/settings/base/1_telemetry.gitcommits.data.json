@@ -1,0 +1,13 @@
+{
+  "_index": ".kibana",
+  "_type": "doc",
+  "_id": "telemetry:telemetry",
+  "_score": 1,
+  "_source": {
+    "telemetry": {
+      "enabled": false
+    },
+    "type": "telemetry",
+    "updated_at": "2019-01-29T10:25:37.748Z"
+  }
+}

@@ -1,19 +1,22 @@
 {
   "_index": ".kibana",
-  "_type": "dashboard",
-  "_id": "11bacbf0-e4a9-11e7-b91f-5fb563b02e79",
+  "_type": "doc",
+  "_id": "dashboard:f8f0c720-23b6-11e9-ae14-1dc4e23b60c3",
   "_score": 1,
   "_source": {
-    "title": "Projects dashboard",
-    "hits": 0,
-    "description": "",
-    "panelsJSON": "[{\"col\":1,\"id\":\"0d0d5ae0-d9b0-11e7-bc06-5dd1310bbecc\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"63c8f590-d9b2-11e7-bc06-5dd1310bbecc\",\"panelIndex\":2,\"row\":12,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"cc5678a0-d9b0-11e7-bc06-5dd1310bbecc\",\"panelIndex\":3,\"row\":3,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"0f78a3a0-d9b2-11e7-bc06-5dd1310bbecc\",\"panelIndex\":4,\"row\":12,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"176b0730-d9ce-11e7-bc47-b39f13297094\",\"panelIndex\":5,\"row\":15,\"size_x\":6,\"size_y\":7,\"type\":\"visualization\"},{\"col\":1,\"id\":\"1b513980-d9b7-11e7-bc47-b39f13297094\",\"panelIndex\":6,\"row\":15,\"size_x\":6,\"size_y\":7,\"type\":\"visualization\"},{\"col\":1,\"id\":\"67c28b30-d9cf-11e7-bc47-b39f13297094\",\"panelIndex\":7,\"row\":7,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"}]",
-    "optionsJSON": "{\"darkTheme\":false}",
-    "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"},\"legendOpen\":false}},\"P-3\":{\"vis\":{\"legendOpen\":false}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":7,\"direction\":\"asc\"}}}}}",
-    "version": 1,
-    "timeRestore": false,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"gitcommits\",\"key\":\"is_merge\",\"negate\":false,\"params\":[\"false\"],\"type\":\"phrases\",\"value\":\"false\"},\"query\":{\"bool\":{\"minimum_should_match\":1,\"should\":[{\"match_phrase\":{\"is_merge\":\"false\"}}]}}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
-    }
+    "dashboard": {
+      "title": "Git Commits dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":6,\"i\":\"1\"},\"id\":\"730ecdb0-23ba-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":24,\"w\":48,\"h\":22,\"i\":\"2\"},\"id\":\"7d9b8c60-23f0-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":46,\"w\":24,\"h\":18,\"i\":\"4\"},\"id\":\"0078d480-23f1-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":46,\"w\":24,\"h\":18,\"i\":\"5\"},\"id\":\"31c47580-23f1-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":64,\"w\":24,\"h\":20,\"i\":\"6\"},\"id\":\"5ba41ad0-23f2-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":84,\"w\":48,\"h\":21,\"i\":\"7\"},\"id\":\"3847de90-23f3-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":0,\"y\":6,\"w\":48,\"h\":18,\"i\":\"8\"},\"id\":\"01062ff0-23bb-11e9-ae14-1dc4e23b60c3\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.5.4\"},{\"gridData\":{\"x\":0,\"y\":64,\"w\":24,\"h\":20,\"i\":\"9\"},\"version\":\"6.5.4\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"id\":\"61f1dc90-24b2-11e9-b0b6-4f50aa82b6fb\",\"embeddableConfig\":{}}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"7d9fb770-23b6-11e9-ae14-1dc4e23b60c3\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"is_merge\",\"value\":\"false\",\"params\":{\"query\":false,\"type\":\"phrase\"}},\"query\":{\"match\":{\"is_merge\":{\"query\":false,\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    },
+    "type": "dashboard",
+    "updated_at": "2019-01-30T17:15:59.605Z"
   }
 }

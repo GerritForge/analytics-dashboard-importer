@@ -1,14 +1,20 @@
 {
-    "_id": "cc5678a0-d9b0-11e7-bc06-5dd1310bbecc",
-    "_type": "visualization",
+    "_index": ".kibana",
+    "_type": "doc",
+    "_id": "visualization:01062ff0-23bb-11e9-ae14-1dc4e23b60c3",
+    "_score": 1,
     "_source": {
-        "title": "Commits per day",
-        "visState": "{\"title\":\"Commits per day\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Commit day\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"author\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"#commits\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"#commits\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"last_commit_date\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Commit day\"}}],\"listeners\":{}}",
-        "uiStateJSON": "{}",
-        "description": "",
-        "version": 1,
-        "kibanaSavedObjectMeta": {
-            "searchSourceJSON": "{\"index\":\"gitcommits\",\"query\":{\"match_all\":{}},\"filter\":[]}"
-        }
+        "visualization": {
+            "title": "GIT Commits - commits over time",
+            "visState": "{\"title\":\"GIT Commits - commits over time\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"#Commits\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"#Commits\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"last_commit_date\",\"timeRange\":{\"from\":\"now-5y\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"time_zone\":\"Europe/London\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+            "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+            "description": "",
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"7d9fb770-23b6-11e9-ae14-1dc4e23b60c3\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+            }
+        },
+        "type": "visualization",
+        "updated_at": "2019-01-29T11:43:38.008Z"
     }
 }

@@ -1,14 +1,20 @@
 {
-    "_id": "0f78a3a0-d9b2-11e7-bc06-5dd1310bbecc",
-    "_type": "visualization",
+    "_index": ".kibana",
+    "_type": "doc",
+    "_id": "visualization:0078d480-23f1-11e9-ae14-1dc4e23b60c3",
+    "_score": 1,
     "_source": {
-        "title": "Commits per organization",
-        "visState": "{\"title\":\"Commits per organization\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"organization.keyword\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
-        "uiStateJSON": "{}",
-        "description": "",
-        "version": 1,
-        "kibanaSavedObjectMeta": {
-            "searchSourceJSON": "{\"index\":\"gitcommits\",\"query\":{\"match_all\":{}},\"filter\":[]}"
-        }
+        "visualization": {
+            "title": "GIT Commits - Commits per Organization",
+            "visState": "{\"title\":\"GIT Commits - Commits per Organization\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"organization.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":true,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Organization\"}}]}",
+            "uiStateJSON": "{}",
+            "description": "",
+            "version": 1,
+            "kibanaSavedObjectMeta": {
+                "searchSourceJSON": "{\"index\":\"7d9fb770-23b6-11e9-ae14-1dc4e23b60c3\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+            }
+        },
+        "type": "visualization",
+        "updated_at": "2019-01-29T18:10:21.666Z"
     }
 }
