@@ -1,14 +1,20 @@
 {
-	"_id": "208c4da0-d9c5-11e7-bc47-b39f13297094",
-	"_type": "visualization",
+	"_index": ".kibana",
+	"_type": "doc",
+	"_id": "visualization:3847de90-23f3-11e9-ae14-1dc4e23b60c3",
+	"_score": 1,
 	"_source": {
-		"title": "Authors activity over years heatmap",
-		"visState": "{\"title\":\"Authors activity over years heatmap\",\"type\":\"heatmap\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Yellow to Red\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":true,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":true},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"last_commit_date\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"author.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Author\"}}],\"listeners\":{}}",
-		"uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0% - 10%\":\"rgb(255,255,204)\",\"10% - 20%\":\"rgb(255,241,170)\",\"20% - 30%\":\"rgb(254,225,135)\",\"30% - 40%\":\"rgb(254,201,101)\",\"40% - 50%\":\"rgb(254,171,73)\",\"50% - 60%\":\"rgb(253,141,60)\",\"60% - 70%\":\"rgb(252,91,46)\",\"70% - 80%\":\"rgb(237,47,34)\",\"80% - 90%\":\"rgb(212,16,32)\",\"90% - 100%\":\"rgb(176,0,38)\"}}}",
-		"description": "",
-		"version": 1,
-		"kibanaSavedObjectMeta": {
-			"searchSourceJSON": "{\"index\":\"gitcommits\",\"query\":{\"match_all\":{}},\"filter\":[]}"
-		}
+		"visualization": {
+			"title": "GIT Commits - Authors activity over the years",
+			"visState": "{\"title\":\"GIT Commits - Authors activity over the years\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Blues\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":true},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"num_commits\",\"customLabel\":\"#Commits\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"last_commit_date\",\"timeRange\":{\"from\":\"now-5y\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"Europe/London\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"author.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Author\"}}]}",
+			"uiStateJSON": "{\"vis\":{\"defaultColors\":{\"2 - 79\":\"rgb(247,251,255)\",\"79 - 156\":\"rgb(227,238,249)\",\"156 - 233\":\"rgb(208,225,242)\",\"233 - 310\":\"rgb(182,212,233)\",\"310 - 386\":\"rgb(148,196,223)\",\"386 - 463\":\"rgb(107,174,214)\",\"463 - 540\":\"rgb(74,152,201)\",\"540 - 617\":\"rgb(46,126,188)\",\"617 - 694\":\"rgb(23,100,171)\",\"694 - 770\":\"rgb(8,74,145)\"}}}",
+			"description": "",
+			"version": 1,
+			"kibanaSavedObjectMeta": {
+				"searchSourceJSON": "{\"index\":\"7d9fb770-23b6-11e9-ae14-1dc4e23b60c3\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+			}
+		},
+		"type": "visualization",
+		"updated_at": "2019-01-29T18:25:13.977Z"
 	}
 }
